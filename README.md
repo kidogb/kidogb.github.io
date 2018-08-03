@@ -1,32 +1,60 @@
-# Scribble
+# The Plain
 
-A Jekyll theme. [Demo :point_left:](http://scribble.muan.co/posts/scribble-the-jekyll-theme).
+> The Plain is a minimalist Jekyll theme, ideally designed for your personal blog use. This Jekyll theme provides a minimum distraction so you can focus on writing that matters to you and your readers. This theme is originally inspired from [Leonard Lamprecht's _leo_ theme](https://github.com/leo/leo.github.io).
 
-![screenshot](https://cloud.githubusercontent.com/assets/1153134/23830104/6d4665e0-06b7-11e7-8805-57e73c346459.png)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-4.0-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/the-plain.svg?branch=master)
 
-## Get started
+- **Demo:** https://heiswayi.github.io/the-plain/
 
-1. [Fork the repository](https://github.com/muan/scribble/fork)
+![SCREENSHOT](https://i.imgur.com/FITKN1H.png)
 
-2. Clone the repository: `git clone https://github.com/username/scribble`
+## Usage
 
-3. Run `bundle install`
+### On an unlimited Jekyll host
 
-4. Run Jekyll: `bundle exec jekyll serve -w`
+> **NOTE** This does NOT work on GitHub, see the next section.
 
-5. Go to http://localhost:4000 for your site.
+Put this in your *Gemfile*:
 
----
+	gem 'the-plain'
 
-## Make it yours
+and run `bundle install` to install the plugin.
 
-1. Edit `_config.yml`, adn then rerun `jekyll serve -w`
+Add this to your sites *_config.yml* file:
 
-2. Change `about.md` for blog intro
+	theme: the-plain
 
-3. For domain settings see [the guide from GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
+Then copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
 
-## The end
+### On GitHub
 
-Like it? [Tell me](http://twitter.com/muanchiou).<br/>
-Problem? [Use GitHub Issues](https://github.com/muan/scribble).
+GitHub - for your user account pages or repository gh-pages - only supports a limited set of themes.
+
+Therefore, you need to use the 'remote\_theme:' setting instead of 'theme:', which is supported by [a 3rd party plugin](https://github.com/benbalter/jekyll-remote-theme).
+
+Put this in your *Gemfile*:
+
+	gem 'jekyll-remote-theme'
+
+and run `bundle install` to install the plugin.
+
+Add the following to your site's *_config.yml* to activate the plugin and to select this theme:
+
+	plugins:
+	  - jekyll-remote-theme
+
+	remote_theme: heiswayi/the-plain
+
+This will grab the theme directly from the GitHub repo.
+
+Now copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+
+## Authors
+
+- [**Heiswayi Nrird**](https://heiswayi.nrird.com)
+
+See also the list of [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) who participated in this project.
+
+## License
+
+[MIT](LICENSE)
