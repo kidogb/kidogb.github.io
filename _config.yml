@@ -25,7 +25,7 @@ exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "scr
 plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
-remote_theme: heiswayi/the-plain
+theme: the-plain
 
 
 
