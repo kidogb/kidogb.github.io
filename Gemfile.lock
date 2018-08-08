@@ -99,7 +99,7 @@ DEPENDENCIES
   bundler (~> 1.15)
   html-proofer
   jekyll-sitemap
-  rake (~> 12.0)
+  rake
   the-plain!
   tzinfo
   tzinfo-data
